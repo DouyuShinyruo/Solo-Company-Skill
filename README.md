@@ -27,11 +27,11 @@
 
 ### 1. 复制 Skill 文件
 
-将 `skills/team/` 目录复制到你的项目 `.claude/skills/` 目录下：
+将整个仓库克隆或下载后，将 `SKILL.md` 复制到你的项目 `.claude/skills/` 目录下：
 
 ```bash
 # 假设你的项目在 ~/my-project
-cp -r skills/team ~/my-project/.claude/skills/
+cp SKILL.md ~/my-project/.claude/skills/team.md
 ```
 
 ### 2. 复制 Agent 文件
@@ -96,16 +96,15 @@ cp agents/*.md ~/my-project/.claude/agents/
 ## 目录结构
 
 ```
-├── skills/
-│   └── team/
-│       └── SKILL.md       # 核心 skill 文件
+├── SKILL.md               # 核心 skill 文件
 ├── agents/                # 10 个专业 agent
 │   ├── ceo-bezos.md
 │   ├── cto-vogels.md
 │   └── ...
 ├── config/
 │   └── settings.json      # Agent Teams 配置参考
-└── README.md              # 本文档
+├── README.md              # 本文档
+└── LICENSE                # MIT License
 ```
 
 ## 注意事项
